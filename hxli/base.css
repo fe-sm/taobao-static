@@ -199,7 +199,7 @@
     width: calc(100% - 180px);
     padding-bottom: 20px;
   }
-  .content-jump {
+  .content-jump-wrap {
     background: #FFF;
     position: absolute;
     right: 20px;
@@ -208,7 +208,7 @@
   }
   .jump-fixed {
     position: fixed;
-    top: 50px;
+    top: 92px;
   }
   .content-jump li {
     width: 50px;
@@ -253,7 +253,6 @@
   /*搜索部分开始*/
   .search {
     display:flex;
-    justify-content: space-between;
     margin-top: 15px;
   }
   .search input {
@@ -274,11 +273,19 @@
     text-indent: -5000px;
   }
   .search-info {
-    flex: 1 1 auto;
     display:flex;
     flex-direction: column;
     padding: 0 100px;
   }
+  .search-fixed {
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    top: -16px;
+    padding-top: 16px;
+    background: #FFF;
+  }
+
   .search-info-top {
     display: flex;
     margin-bottom: 8px;
@@ -439,7 +446,7 @@
     border-radius: 12px;
     cursor: pointer;
   }
-  .play-icon .play-icon-right {
+  .play-icon .play-icon-next {
     right: -8px;
     left: auto;
   }
@@ -1167,7 +1174,7 @@
     padding: 0;
   }
   .benefit-img-wrap li {
-    width: 216px;
+    width: 20%;
     text-align: left;
     padding-left: 20px;
     border: 1px solid #F4F4F4;
@@ -1183,7 +1190,7 @@
     background: #FFF;
     margin-top: 10px;
   }
-  #like-sell {
+  .like-sell {
     width: 100%;
     height: 100%;
     background: #FFF;
@@ -1205,13 +1212,17 @@
     margin-right: 15px;
   }
   .hot-sell-content {
-    height: 100%;
+    width: 100%;
+    display: flex;
+  }
+  .hot-sell-content {
     width: 100%;
     display: flex;
   }
   .hot-sell-content li {
     width: 197px;
     padding: 20px;
+    height: 342px;
     border-top: 1px solid #F4F4F4;
     border-right: 1px solid #F4F4F4;
   }
