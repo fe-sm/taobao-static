@@ -1398,10 +1398,10 @@
 
   <script src="./index.js"></script>
   <!-- 图片懒加载法一 -->
-  <script src="./base.js"></script>
+  <script src="./img-lazy-load.js"></script>
   <script>
-    var imageRightLazyLoad = new ImageLazyLoad()
-    imageRightLazyLoad._init()
+    var imageLazyLoad = new ImageLazyLoad({delay: 100})
+    imageLazyLoad._init()
   </script>
 </body>
 </html>

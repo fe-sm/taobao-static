@@ -12,7 +12,7 @@ class ImageLazyLoad {
    * @param {number} option.preloadHeight - extra downside height that will preload, default is 0
    * @param {numbes} option.delay - delay to optimize high speed scroll, default is 0
    */
-  constructor ({ preloadHeight = 0, delay = 0 } = { }, container = document ) {
+  constructor ({ preloadHeight = 0, delay = 0 } = { }, container = document) {
     this.container = container
     this.option = { preloadHeight, delay }
 
@@ -64,8 +64,9 @@ class ImageLazyLoad {
    */
   _loadImagesCore () {
     const images = this.container.querySelectorAll('img')
-    const containerScrollTop = this.container.documentElement.scrollTop
-    const containerHeight = this.container.documentElement.clientHeight
+    // nodeType为9代表该元素是document
+    const containerScrollTop = this.container.nodeType === 9 ? document.documentElement.scrollTop : this.container.scrollTop
+    const containerHeight = this.container.nodeType === 9 ? document.documentElement.clientHeight : this.container.offsetHeight
 
     // load condition
     // in some layout, if one image fits this condition, the following images fit, too.

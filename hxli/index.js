@@ -160,11 +160,10 @@ $(function () {
     $('html').animate({"scrollTop": jumpTopArr[$(this).index()]}, 300)
   })
 
-  // // 使用intersectionObserver实现图片懒加载
+  // 使用intersectionObserver实现图片懒加载
   // var observer = new IntersectionObserver(function (elements) {
   //   elements.forEach(function(element) {
   //     if (element.intersectionRatio > 0 && element.intersectionRatio <= 1) {
-  //       console.log(element.target.dataset)
   //       if (element.target.dataset.src) {
   //         element.target.src = element.target.dataset.src
   //       }

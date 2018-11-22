@@ -105,7 +105,7 @@
     float: right
   }
   .common {
-    padding: 0 100px 0 80px;
+    padding: 0 100px 0 7%;
   }
 
   .line {
@@ -196,7 +196,7 @@
   .content {
     height: calc(100% - 200px - 182px);
     margin-top: 20px;
-    width: calc(100% - 180px);
+    width: calc(100% - 100px - 7%);
     padding-bottom: 20px;
   }
   .content-jump-wrap {
@@ -487,6 +487,7 @@
   }
   .content-header-left-img-wrap {
     display: flex;
+    overflow: hidden;
   }
   .content-header-left-img-wrap img {
     display: block;
@@ -684,7 +685,7 @@
     transform-origin: 0 100%;
   }
   #heart:before {
-    left: 7px;
+    left: 6px;
   }
   #heart:after {
     left: 0px;
