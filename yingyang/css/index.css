@@ -4,6 +4,7 @@
 }
 li{
 	list-style: none;
+	cursor: pointer;
 }
 .subtitle {
 	color: #999;
@@ -125,7 +126,6 @@ banner img{
 	height: 22px;
 	line-height: 22px;
 	margin-right: 4px;
-	cursor: pointer;
 }
 .searchbox ul li.selected{
 	color: #FFF;
@@ -230,7 +230,6 @@ nav li{
 	font-weight: 400;
 	width: 145px;
 	color: #666;
-	cursor: pointer;
 }
 .menu .arrow{
 	position: absolute;
@@ -337,7 +336,6 @@ nav li{
 	background-color: #e2e2e2;
 	background-color: rgba(255,255,255,.5);
 	border-radius: 50%;
-	cursor: pointer;
 	-webkit-transition-duration: .3s;
 	transition-duration: .3s;
 }
@@ -527,7 +525,6 @@ nav li{
 	background-image: linear-gradient(to right,#ff5000 0,#ff6f06 100%);
 	border-radius: 5px;
 	margin-right: 5px;
-	cursor: pointer;
 }
 .col-right3 li{
 	float: left;
@@ -547,7 +544,6 @@ nav li{
 	width: 32px;
 	text-align: center;
 	margin: 0 11px;
-	cursor: pointer;
 }
 .col-right3 ul li span.hover{
 	padding: 0;
@@ -1533,7 +1529,6 @@ footer span:hover{
 	background: #fff;
 	/* border-bottom: 1px solid #ccc; */
 	position: relative;
-	cursor: pointer;
 }
 .goTop_icon{
 	transform:rotate(-90deg);
